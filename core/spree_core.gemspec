@@ -32,7 +32,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'kaminari', '~> 0.17'
   s.add_dependency 'monetize', '~> 1.1'
   s.add_dependency 'paperclip', '~> 4.3.0'
-  s.add_dependency 'paranoia', '~> 2.1.0'
+  s.add_dependency 'paranoia', '~> 2.2.0.alpha'
   s.add_dependency 'premailer-rails'
   s.add_dependency 'acts-as-taggable-on', '~> 3.5'
   s.add_dependency 'rails', '>= 5.0.0.rc1', '< 5.1'
