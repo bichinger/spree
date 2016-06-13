@@ -36,7 +36,6 @@ module Spree
         # And Sqlite3 cannot work on outher parenthesis from `(left UNION right)`.
         # So this construct makes both happy.
         select = Arel::SelectManager.new(
-          Promotion,
           Promotion.arel_table.create_table_alias(
             order.promotions.active.union(Promotion.active.where(code: nil, path: nil)),
             Promotion.table_name
