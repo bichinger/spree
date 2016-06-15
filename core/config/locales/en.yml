@@ -313,6 +313,10 @@ en:
           attributes:
             expires_at:
               invalid_date_range: must be later than start date
+        spree/product:
+          attributes:
+            base:
+              cannot_destroy_if_attached_to_line_items: Cannot delete products once they are attached to line items.
         spree/refund:
           attributes:
             amount:
@@ -343,6 +347,10 @@ en:
             amount_authorized:
               exceeds_total_credits: Exceeds total credits.
         spree/variant:
+          attributes:
+            base:
+              cannot_destroy_if_attached_to_line_items: Cannot delete variants once they are attached to line items.
+        spree/shipping_method:
           attributes:
             base:
               cannot_destroy_if_attached_to_line_items: Cannot delete variants once they are attached to line items.
@@ -443,6 +451,7 @@ en:
     address: Address
     address1: Address
     address2: Address (contd.)
+    addresses: Addresses
     adjustable: Adjustable
     adjustment: Adjustment
     adjustment_amount: Amount
@@ -1399,6 +1408,7 @@ en:
     taxon: Taxon
     taxon_edit: Edit Taxon
     taxon_placeholder: Add a Taxon
+    tags: Tags
     tags_placeholder: Add Tags
     taxon_rule:
       choose_taxons: Choose taxons
