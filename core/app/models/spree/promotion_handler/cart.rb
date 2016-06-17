@@ -31,6 +31,7 @@ module Spree
       private
 
       def promotions
+        return []
         # AR cannot bind raw ASTs to prepared statements. There always must be a manager around.
         # Also Postgresql requires an aliased table for `SELECT * FROM (subexpression) AS alias`.
         # And Sqlite3 cannot work on outher parenthesis from `(left UNION right)`.
