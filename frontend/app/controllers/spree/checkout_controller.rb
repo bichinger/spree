@@ -138,8 +138,8 @@ module Spree
     def before_address
       # if the user has a default address, a callback takes care of setting
       # that; but if he doesn't, we need to build an empty one here
-      @order.bill_address ||= Address.build_default
-      @order.ship_address ||= Address.build_default if @order.checkout_steps.include?('delivery')
+      @order.bill_address ||= Spree::Address.build_default
+      @order.ship_address ||= Spree::Address.build_default if @order.checkout_steps.include?('delivery')
     end
 
     def before_delivery
